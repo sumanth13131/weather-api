@@ -20,19 +20,19 @@ def index(city):
 			for i in range(0,len(result['data']['forecast']['daily']['o3'])):
 				if result['data']['forecast']['daily']['o3'][i]['day'] == str(date.today()):
 					o3=result['data']['forecast']['daily']['o3'][i]['avg']
-					print(o3)
+					#print(o3)
 			for i in range(0,len(result['data']['forecast']['daily']['pm10'])):
 				if result['data']['forecast']['daily']['pm10'][i]['day'] ==str( date.today()):
 					pm10=result['data']['forecast']['daily']['pm10'][i]['avg']
-					print(pm10)
+					#print(pm10)
 			for i in range(0,len(result['data']['forecast']['daily']['pm25'])):
 				if result['data']['forecast']['daily']['pm25'][i]['day'] == str(date.today()):
 					pm25=result['data']['forecast']['daily']['pm25'][i]['avg']
-					print(pm25)
+					#print(pm25)
 			for i in range(0,len(result['data']['forecast']['daily']['uvi'])):
 				if result['data']['forecast']['daily']['uvi'][i]['day'] == str(date.today()):
 					uvi=result['data']['forecast']['daily']['uvi'][i]['avg']
-					print(uvi)
+					#print(uvi)
 			# o3=result['data']['forecast']['daily']['o3'][3]['avg']
 			# pm10=result['data']['forecast']['daily']['pm10'][3]['avg']
 			# pm25=result['data']['forecast']['daily']['pm25'][3]['avg']
